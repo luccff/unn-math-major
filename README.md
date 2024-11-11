@@ -1,7 +1,7 @@
 # unn-math-major
 Learning materials, lecture notes and assignments for Mathematics major at unn.ru
 
-# How to View LaTeX Formulas in Markdown
+### How to View LaTeX Formulas in Markdown
 
 To display LaTeX formulas correctly in Markdown, use these programs:
 
