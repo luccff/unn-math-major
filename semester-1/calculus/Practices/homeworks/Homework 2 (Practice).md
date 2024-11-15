@@ -1,4 +1,4 @@
-# Supremum and Infenum
+# Supremum and Infinum
 ## Exercise 1 
 $$\displaylines{
 A = \left\{  -1 - \frac{6}{n + 1}  \mid n \in \mathbb{N} \right\} \\ 
