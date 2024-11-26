@@ -72,7 +72,7 @@ $$ y' = u' v w + u v' w + u v w' $$
 Compute each derivative separately:
 - ${( u' = -\sin x + 2 )}$
 - ${( v' = \cos x \ln x + \dfrac{\sin x}{x} + 2x )}$
-- ${\( w' = 23^x \ln 23 \)}$
+- ${( w' = 23^x \ln 23 )}$
 
 Then combine them:
 $$ y' = [ (-\sin x + 2) v w ] + [ u (\cos x \ln x + \dfrac{\sin x}{x} + 2x) w ] + [ u v w \ln 23 ] $$
@@ -200,7 +200,7 @@ $$ 5 \log_5 5^x = 5 \cdot x = 5x $$
 Simplify denominator:
 $$ \sqrt{x^2} = |x| $$
 
-Assuming ${( x > 0 \), ( \sqrt{x^2} = x )}$
+Assuming ${( x > 0 ), ( \sqrt{x^2} = x )}$
 
 So:
 $$ y = \dfrac{5x + \dfrac{3 e^x}{x^3}}{x} $$
@@ -226,7 +226,7 @@ Let numerator ${( u = \cos x - ( \lg x )^2 )}$, derivative ${( u' = -\sin x - 2 
 
 Denominator ${( v = 4^x + 5 \tan x)}$, derivative ${( v' = 4^x \ln 4 + 5 \sec^2 x )}$
 
-Compute ${\( y' = \dfrac{ u' v - u v' }{ v^2 } + \dfrac{ -2 \cos x }{ \sin^2 x } \)}$
+Compute ${( y' = \dfrac{ u' v - u v' }{ v^2 } + \dfrac{ -2 \cos x }{ \sin^2 x } )}$
 
 ---
 
