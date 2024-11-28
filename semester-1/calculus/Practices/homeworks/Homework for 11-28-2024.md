@@ -80,14 +80,19 @@ $$\displaylines{
 }$$
 Ex. 26
 $$\displaylines{
-\lim_{ x \to 0 } {\frac{2\tan{(3x)}-6\tan{(x)}}{4\text{ arctan}(x) - \text{ arctan}(3x)} } = \lim_{ x \to 0 } {\frac{(6\sec{(3x)}^{ 2 }-6\sec{(x)}^{ 2 })(9x^{ 4}+10x^{ 2 } +1)}{1+33x^{ 2 }} } = 0
+\lim_{ x \to 0 } {\frac{2\tan{(3x)}-6\tan{(x)}}{3\text{ arctan}(x) - \text{ arctan}(3x)} } = лень
 }$$
 Ex. 27
 $$\displaylines{
 \lim_{ x \to 1 } {\frac{x^{ 20 } -2x+1}{x^{ 30 }-2x+1} } = \lim_{ x \to 1 } {\frac{20x^{ 19 }-2}{30x^{ 29 }-2} } = \frac{18}{28} = \frac{9}{14}
 }$$
-Ex. 32
+Ex. 29
 $$\displaylines{
 \lim_{ x \to 0 } {\frac{\sin{(2x)}-2x}{x^{ 2 }\arcsin{(x)}} } = \lim_{ x \to 0 } {\frac{2\cos{(2x)}-2}{2x\arcsin{(x)}+x^{ 2 }\cdot \frac{1}{\sqrt{ 1-x^{ 2 } }}} } = \lim_{ x \to 0 } {\frac{(2\cos{(2x)}-2)\sqrt{ 1-x^{ 2 } }}{2x\arcsin{(x)}\cdot \sqrt{ 1-x^{ 2 } }+x^{ 2 }} } = \lim_{ x \to 0 } {\frac{-4(1-x^{ 2 })\sin{(2x)}-2x\cos{(2x)}+2x}{2\arcsin{(x)}-3\arcsin{(x)}\cdot x^{ 2 }+4x\sqrt{ 1-x^{ 2 } }} } = \\
-\lim_{ x \to 0 } {\frac{(6x\sin{(2x)}-4\cos{(2x)}(1-x^{ 2 })+2\sin{(x)}^{ 2 })\sqrt{ 1-x^{ 2 } }}{3-6x^{ 2 }-4\arcsin{(x)}\cdot x\sqrt{ 1-x^{ 2 } }} } = \frac{(6\cdot 0\sin{(2\cdot 0)}-4\cos{(2\cdot 0)}\cdot (1-0^{ 2 }))\sqrt{ 1-0^{ 2 } }}{3-6\cdot 0^{ 2 }-5\arcsin{(0)}\cdot 0\sqrt{ 1-0^{ 2 } }} = -\frac{4}{3} 
+= \lim_{ x \to 0 } {\frac{(6x\sin{(2x)}-4\cos{(2x)}(1-x^{ 2 })+2\sin{(x)}^{ 2 })\sqrt{ 1-x^{ 2 } }}{3-6x^{ 2 }-4\arcsin{(x)}\cdot x\sqrt{ 1-x^{ 2 } }} } = \frac{(6\cdot 0\sin{(2\cdot 0)}-4\cos{(2\cdot 0)}\cdot (1-0^{ 2 }))\sqrt{ 1-0^{ 2 } }}{3-6\cdot 0^{ 2 }-5\arcsin{(0)}\cdot 0\sqrt{ 1-0^{ 2 } }} = -\frac{4}{3} 
 }$$
+Ex. 32
+$$\displaylines{
+\lim_{ x \to 1 } {\frac{x^{ 30 }-50x+49}{x^{ 100 }-100x+99} } = \lim_{ x \to 1 } {\frac{50x^{ 49 }-50}{100x^{ 99 } - 100} } = \lim_{ x \to 1 } {\frac{49\cdot  50x^{ 48 }}{990x} } = \frac{2450}{9900} = \frac{49}{198}   
+}$$
+
