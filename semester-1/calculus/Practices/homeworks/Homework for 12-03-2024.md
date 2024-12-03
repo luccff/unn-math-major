@@ -47,7 +47,7 @@ y(1) = \alpha \cdot  1 + \beta = \alpha + \beta \\
 \text{ Условие дифф.: } \lim_{ x \to 1^{ - } } {y'(x)} = \lim_{ x \to 1^{ + } } {y'(x)} \\
 x\leq 1: \ y'(x) = \alpha \\
 x>1: \ y'(x) = 2x \\
-x = 1: \ y'(1) = 2\cdot 1 - 2 \\
+x = 1: \ y'(1) = 2\cdot 1 = 2 \\
 \text{ Для дифф. должно выполнятся: } \alpha = 2 \\
 \alpha + \beta = 1 \implies 2 + \beta = 1 \implies  \beta = -1 \\
 }$$
@@ -111,4 +111,4 @@ x, \  & x\leq 0 \\
 f'_{ - }(0) = \lim_{ x \to 0^{ - } } {\frac{f(x)-f(0)}{x-0} } = \lim_{ x \to 0^{ - } } {\frac{x-0}{x-0} } = 1 \\
 f_{ + }'(0) = \lim_{ x \to 0^{ + } } {\frac{f(x)-f(0)}{x-0} } = \lim_{ x \to 0^{ + } } {\frac{\sqrt[3]{ x^{ 4 } }\ln((x))-0}{x} } = \lim_{ x \to 0^{ + } } {x^{ 1/3 }\ln(x)} = 0
 }$$
-Ответ: ${f'_{ - } = 0; f'_{ + } = 0}$
+Ответ: ${f'_{ - } = 1; f'_{ + } = 0}$
