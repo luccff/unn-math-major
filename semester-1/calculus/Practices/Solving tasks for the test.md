@@ -46,3 +46,27 @@ S_{ k+1 } = k(k+1)\cdot \left( \frac{k+2}{3}  \right) = \frac{k(k+1)(k+2)}{3}
 $$\displaylines{
 {1\cdot2 + 2\cdot3+ \dots+ n(n-1)=\dfrac{n(n-1)(n+1)}{3}, \quad n \in\mathbb{N}}
 }$$
+Доказать неравенство: ${(1+x)^{ n } \geq 1+ nx, \ x>-1, \ n \in \mathbb{N}}$
+1. База индукции: ${ n = 1}$ 
+$$\displaylines{
+(1+x)^{ 1 } \geq 1+x \\
+1+x\geq  1+x
+}$$
+2. Предположение: ${n = k}$ 
+$$\displaylines{
+(1+x)^{ k } \geq 1+kx
+}$$
+3. Переход: ${n = k+1}$
+$$\displaylines{
+(1+x)^{ k+1 } \geq 1+ xk+x \\
+\text{ Левая часть: } (1+x)^{ k }\cdot (1+x) \\
+\text{ по предположению } (1+x)^{ k } \geq  1+kx \implies (1+x)^{ k+1 } \geq (1+kx)(1+x) \\
+(1+kx)(1+x) = 1+x+kx+kx^{ 2 } \\
+\\
+1 + x(k+1)+kx^{ 2 }\geq 1+x(k+1) \\
+\text{ Так как  }x\geq -1, \ \text{ то } kx^{ 2 } \geq 0 \implies  \text{ доказано }
+}$$
+---
+### 2) Доказать ограниченность и неограниченность последовательности:
+
+Доказать ограниченность: ${x_{n} = \dfrac{(-1)^{ n }n+10}{\sqrt{ n^{ 2 }+3 }}}$
