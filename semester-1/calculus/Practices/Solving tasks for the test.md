@@ -70,3 +70,135 @@ $$\displaylines{
 ### 2) Доказать ограниченность и неограниченность последовательности:
 
 Доказать ограниченность: ${x_{n} = \dfrac{(-1)^{ n }n+10}{\sqrt{ n^{ 2 }+3 }}}$
+$$\displaylines{
+|x_{n}| = \left| \dfrac{(-1)^{ n }n+10}{\sqrt{ n^{ 2 }+3 }} \right| \leq \frac{n+10}{\sqrt{ n^{ 2 } +3}} = \frac{1+\frac{10}{n}}{\sqrt{ 1+\dfrac{3}{n^{ 2 }}  }} = \frac{1}{1} =  1
+}$$
+
+
+
+Доказать неограниченность: ${x_{n} = 2^{ n }+3}$ 
+$$\displaylines{
+x_{n}=2^{ n } + 3 > 2^{ n } \\
+2^{ n }>C \quad n>\log_{2}(C)\\
+n(C) =  \lceil\log_{2}(C) \rceil 
+}$$
+
+
+
+Пусть ${A=[0, 2)}$. Найти, если они существуют ${\sup A, \ \inf A}$. Результат обосновать.
+$$\displaylines{
+\sup A - \text{ наименьшая верхняя граница. } \\
+x \leq  s \quad\forall{x \in A} \\ 
+s'<s - \text{ то } s' \text{ не } \sup A\\
+\forall{x \in A} \text{ удовл. } x<2 \implies 2 = \sup A\\ \\
+\inf A - \text{ наибольшая нижняя граница. } \\
+x \geq t \quad \forall{x \in A} \\
+t'>t \text{ то } t' \text{ не } \inf A \\
+\forall{x} \in A \text{ удовл. } x\geq 0 \implies  0 = \inf A
+}$$
+
+
+
+Пусть ${A=\{2n \ | \ n\in\mathbb{N}\}}$. Найти, если они существуют ${\sup A, \ \inf A}$. Результат обосновать.
+$$\displaylines{
+2 = \inf A \\
++\infty = \sup A
+}$$
+---
+### 3) Сходимость и расходимость.
+ - Доказать по определению: ${\displaystyle \lim_{ n \to \infty } {\dfrac{n^{ 2 }+1}{n^{ 2 }+2}} = 1}$
+$$\displaylines{
+\forall{\varepsilon > 0} \quad \exists N \in \mathbb{N} \quad \forall{n > N} : |a_{n} - L| < \varepsilon\\
+\left| \frac{n^{ 2 }+1}{n^{ 2 }+2}-1  \right| = \left| \frac{(n^{ 2 }+1)-(n^{ 2 }+2)}{n^{ 2 }+2}  \right| = \left| \frac{-1}{n^{ 2 }+2}  \right| = \frac{1}{n^{ 2 }+2} \\
+\frac{1}{n^{ 2 }+2}<\varepsilon \\
+n^{ 2 }+2> \frac{1}{\varepsilon} \\ 
+n^{ 2 }< \frac{1}{\epsilon}-2 \\
+N = \lceil \sqrt{ \frac{1}{\varepsilon} -2}\rceil 
+}$$
+
+
+
+- Доказать расходимость последовательности ${x_{n} = (-1)^{ n }\cdot2}$
+Критерий Коши:
+$$\displaylines{
+\forall{\varepsilon}>0 \quad \exists N \in \mathbb{N} \quad \forall{n, \ m>N}: |x_{n}-x_{ m }|<\varepsilon
+}$$
+Отрицание критерия Коши:
+$$\displaylines{
+\exists{\varepsilon}>0 \quad \forall{} N \in \mathbb{N} \quad \exists{n, \ m>N}: |x_{n}-x_{ m }|\geq \varepsilon
+}$$
+Пусть ${\varepsilon = 4}$
+Возьмем ${n = 2k, \ m = 2k+1}$
+$$\displaylines{
+x_{n}=2, \ x_{ m } = -2
+}$$
+$$\displaylines{
+|x_{n}-x_{ m }| = |2-(-2)| = 4 \geq \varepsilon = 4
+}$$
+Это противоречит Критерию Коши ${\implies}$ последовательность расходится.
+
+
+
+- Доказать сходимость по К.К. ${x_{n} = \dfrac{\sin{(1)}}{2}+\dots+\dfrac{\sin{(n)}}{2^{ n }}}$
+$$\displaylines{
+\forall{\varepsilon}>0 \quad \exists N \in \mathbb{N} \quad \forall{n, \ m>N}: |x_{n}-x_{ m }|<\varepsilon
+}$$
+$$\displaylines{
+x_{n} = \sum_{k=1}^{n} \frac{\sin{(k)}}{2^{ k }} \\
+x_{n}-x_{ m } = \sum_{k=m+1}^{n} \frac{\sin{(k)}}{2^{ k }} \\
+\left| \sum_{k=m+1}^{n} \frac{\sin{(k)}}{2^{ k }} \right| <\varepsilon \\
+\left|\sum_{k=m+1}^{n}\frac{\sin{(k)}}{2^{ k }} \right| \leq \sum_{k=m+1}^{n}\frac{1}{2^{ k }} \\
+
+}$$
+...
+
+### 4) Раскрытие неопределенностей
+$$\displaylines{
+\lim_{ n \to \infty } {\frac{\sqrt{ 4n^{ 3 }-n }-\sqrt[3]{ 8n^{ 6 }+n }}{\sqrt{ 4n^{ 4 }+n }-3n^{ 2 }} } = \lim_{ n \to \infty } {\frac{2n^{ 3/2 }-2n^{ 2 }}{-n^{ 2 }} } = \lim_{ n \to \infty } {\left( \frac{2n^{ 3/2 }}{-n^{ 3 }}- \frac{2n^{ 2 }}{-n^{ 2 }}  \right) } = \\
+\lim_{ n \to \infty } {\left( -\frac{2}{n^{ 1/2 }} +2  \right)} = 2
+}$$
+$$\displaylines{
+\lim_{ n \to \infty } \frac{{n^{ 4 }-(n^{ 2 }+n+1)\cdot n^{ 2 }-3n^{ 3 }}}{n-4n^{ 3 }+n^{ 2 }} = \lim_{ n \to \infty } {\frac{n^{ 4 }-n^{ 4 }-n^{ 3 }-n^{ 2 }-3n^{ 3 }}{n-4n^{ 3 }+n^{ 2 }} } = \lim_{ n \to \infty } {\frac{-4n^{ 3 }-n^{ 2 }}{n-4n^{ 3 }+n^{ 2 }} } = \lim_{ n \to \infty } {\frac{4n^{ 3 }}{4n^{ 3 }}} = 1
+}$$
+$$\displaylines{
+\lim_{ n \to \infty } \left( {\sqrt{ n^{ 2 }+4n }-\sqrt{ n^{ 2 }+n }} \right) = \lim_{ n \to \infty } {\left( \frac{({\sqrt{ n^{ 2 }+4n }-\sqrt{ n^{ 2 }+n }})({\sqrt{ n^{ 2 }+4n }+\sqrt{ n^{ 2 }+n }})}{{\sqrt{ n^{ 2 }+4n }+\sqrt{ n^{ 2 }+n }}}  \right)} = \\
+= \lim_{ n \to \infty } {\frac{n^{ 2 }+4n-n^{ 2 }-n}{{\sqrt{ n^{ 2 }+4n }+\sqrt{ n^{ 2 }+n }}} } = \lim_{ n \to \infty } {\frac{3n}{\sqrt{ n^{ 2 }\left( 1+\dfrac{4}{n} \right) } + \sqrt{ n^{ 2 }\left( 1+\dfrac{1}{n} \right) }}  } = \lim_{ n \to \infty } {\frac{3}{\left( \sqrt{ 1+\dfrac{4}{n} } + \sqrt{ 1+\dfrac{1}{n} } \right)} } = \frac{3}{\sqrt{ 1 } + \sqrt{ 1 }} = \frac{3}{2} 
+}$$
+$$\displaylines{
+\lim_{ n \to \infty } {\frac{2n^{ n }+3n^{ 122 }+9^{ n }}{\ln(n)^{ 3 }+n^{ n }} } = \lim_{ n \to \infty } {\frac{2n^{ n }}{n^{ n }} } = 2
+}$$
+$$\displaylines{
+\lim_{ n \to \infty } {\frac{2n-\ln(n)}{\log_{3}(9^{ n }+4)} } = \lim_{ n \to \infty } {\frac{2n}{2n} } = 1
+}$$
+$$\displaylines{
+\lim_{ n \to \infty } {\left( \frac{2n-3}{2n+1}  \right)^{ 4n-5 }} \\
+\exp\left( 4n-5\ln\left( \frac{2n-3}{2n+1}  \right) \right) \\
+\ln\left( 1-\frac{4}{2n+1}  \right) \sim -\frac{4}{2n+1}\\
+\exp\left( -\frac{16n-20}{2n+1}  \right) = \exp\left( - \frac{16\left( 1-\dfrac{5}{4n}  \right)}{2\left( 1+\dfrac{1}{2n}  \right)}  \right) = \exp(-8)\\
+\implies \lim_{ n \to \infty } {\left( \frac{2n-3}{2n+1}  \right)^{ 4n-5 }} = e^{ -8 }
+}$$
+---
+### 5) Предел функции.
+1) Написать определение ${\displaystyle\lim_{ x \to x_{ 0 } }f(x) =A}$ и дать геометрическую интерпретацию
+Рассмотрим функцию ${y = f(x)}$, которая определена на некотором промежутке ${\mathcal{X}}$, за исключением, возможно, точки ${a}$
+$$\displaylines{
+\lim_{ x \to x_{ 0 } } {f(x) = A} \quad \forall{\varepsilon>0} \quad \exists\delta>0 \quad \forall{x \in \mathcal{X}}: (0<|x-x_{ 0 }|<\delta \implies |f(x)-A| < \varepsilon)
+}$$
+![[Pasted image 20241223120632.png|600]]
+
+
+2) Написать определение ${\displaystyle\lim_{ x \to x_{ 0 } }f(x) =A\pm 0}$ и дать геометрическую интерпретацию
+$$\displaylines{
+\lim_{ x \to x_{ 0 }} {f(x)} = A \pm 0 \iff \begin{matrix}
+\displaystyle\lim_{ x \to x_{ 0 }+0 } {f(x)} = A \\
+\text{ или } \\
+\displaystyle\lim_{ x \to x_{ 0 }-0 } {f(x)} = A
+\end{matrix}
+}$$
+![[Pasted image 20241223121305.png]] ![[Pasted image 20241223121316.png]] ![[Pasted image 20241223121331.png]]
+3) Доказать по определению ${\displaystyle\lim_{ x \to 1 }\dfrac{x-3}{x+1} = - 1}$
+$$\displaylines{
+\lim_{ x \to x_{ 0 } } {f(x) = A} \quad \forall{\varepsilon>0} \quad \exists\delta>0 \quad \forall{x \in \mathcal{X}}: (0<|x-x_{ 0 }|<\delta \implies |f(x)-A| < \varepsilon) \\
+0<|x-1|<\delta \implies  \left| \frac{x-3}{x+1}-1  \right| <\varepsilon \\
+\left| \frac{x-3}{x+1}  -1\right| = \left| \frac{2x-2}{x+1}  \right| =  
+}$$
