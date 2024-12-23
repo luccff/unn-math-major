@@ -115,7 +115,7 @@ n^{ 2 }+2> \frac{1}{\varepsilon} \\
 n^{ 2 }< \frac{1}{\epsilon}-2 \\
 N = \lceil \sqrt{ \frac{1}{\varepsilon} -2}\rceil 
 }$$
-
+---
 
 
 - Доказать расходимость последовательности ${x_{n} = (-1)^{ n }\cdot2}$
@@ -137,21 +137,45 @@ $$\displaylines{
 }$$
 Это противоречит Критерию Коши ${\implies}$ последовательность расходится.
 
+---
 
-
-- Доказать сходимость по К.К. ${x_{n} = \dfrac{\sin{(1)}}{2}+\dots+\dfrac{\sin{(n)}}{2^{ n }}}$
+- Доказать сходимость по К.К. ${x_{n} = \dfrac{\sin{(1)}}{2}+\dots+\dfrac{\sin{(n)}}{2^{ n }} = \displaystyle\sum_{k=1}^{n} \dfrac{\sin{(k)}}{2^{ k }}}$
 $$\displaylines{
 \forall{\varepsilon}>0 \quad \exists N \in \mathbb{N} \quad \forall{n, \ m>N}: |x_{n}-x_{ m }|<\varepsilon
 }$$
 $$\displaylines{
-x_{n} = \sum_{k=1}^{n} \frac{\sin{(k)}}{2^{ k }} \\
-x_{n}-x_{ m } = \sum_{k=m+1}^{n} \frac{\sin{(k)}}{2^{ k }} \\
-\left| \sum_{k=m+1}^{n} \frac{\sin{(k)}}{2^{ k }} \right| <\varepsilon \\
-\left|\sum_{k=m+1}^{n}\frac{\sin{(k)}}{2^{ k }} \right| \leq \sum_{k=m+1}^{n}\frac{1}{2^{ k }} \\
-
+|x_{n}-x_{ m }| < \varepsilon \\
+\left| x_{n}-x_{ m } \right| =  \left| \sum_{k=m+1}^{n} \frac{\sin{(k)}}{2^{ k }} \right| \leq \sum_{k=m+1}^{n} \frac{1}{2^{ k }} \leq \frac{1}{2^{ m }} \\
+m>\log_{2}\left( \frac{1}{\varepsilon} \right)
 }$$
-...
+---
 
+- Доказать расходимость по К.К. ${x_{n} = \dfrac{1}{2} + \dots+ \dfrac{1}{n+1}}$
+$$\displaylines{
+\forall{\varepsilon>0} \quad \exists N \in \mathbb{N} \quad \forall{n, \ m} > N \hookrightarrow |x_{n}-x_{ m }| < \varepsilon \\
+\exists{\varepsilon>0} \quad \forall{} N \in \mathbb{N} \quad \exists{n, \ m} > N \hookrightarrow |x_{n}-x_{ m }| \geq  \varepsilon \\
+\text{ Пусть } n = 2N, \  m = N \\
+|x_{n}-x_{ m }| = \left( 1+\frac{1}{2}+\dots +\frac{1}{2N+1} \right) - \left( 1 + \frac{1}{2}+\dots +\frac{1}{N+1} \right) = \\
+= \frac{1}{N+2}+\frac{1}{N+3}+\dots +\frac{1}{2N+1} \geq  \frac{1}{2N+1} \cdot (N+1) = \frac{1}{2} = \varepsilon 
+\\ \text{ Расходится }
+}$$
+---
+
+- Доказать сходимость по теореме Вейерштрасса и найти предел ${x_{n} = \dfrac{100^{ n }}{(n+2)!}}$ 
+$$\displaylines{
+\frac{x_{n+1}}{x_{n}} = \frac{100^{ n+1 }}{100^{ n }} \cdot  \frac{(n+2)!}{(n+3)!} = 100\cdot \frac{1}{n+3} \\
+\lim_{ n \to \infty } {\frac{100}{n+3}} = 0\\
+\text{ последовательность сходится к нулю. }
+}$$
+---
+
+- Доказать сходимость по теореме Вейерштрасса ${x_{n} = \dfrac{n!}{(n+2)!}}$
+$$\displaylines{
+x_{n} = \frac{1}{(n+2)(n+1)} \\
+\text{ Ограничена снизу нулём, } x_{n+1}<x_{n} \implies  \text{ монотонно убывает } \\
+\implies \text{ сходится к нулю и предел равен } \lim_{ n \to \infty } {x_{n}} = 0
+}$$
+---
 ### 4) Раскрытие неопределенностей
 $$\displaylines{
 \lim_{ n \to \infty } {\frac{\sqrt{ 4n^{ 3 }-n }-\sqrt[3]{ 8n^{ 6 }+n }}{\sqrt{ 4n^{ 4 }+n }-3n^{ 2 }} } = \lim_{ n \to \infty } {\frac{2n^{ 3/2 }-2n^{ 2 }}{-n^{ 2 }} } = \lim_{ n \to \infty } {\left( \frac{2n^{ 3/2 }}{-n^{ 3 }}- \frac{2n^{ 2 }}{-n^{ 2 }}  \right) } = \\
@@ -200,5 +224,5 @@ $$\displaylines{
 $$\displaylines{
 \lim_{ x \to x_{ 0 } } {f(x) = A} \quad \forall{\varepsilon>0} \quad \exists\delta>0 \quad \forall{x \in \mathcal{X}}: (0<|x-x_{ 0 }|<\delta \implies |f(x)-A| < \varepsilon) \\
 0<|x-1|<\delta \implies  \left| \frac{x-3}{x+1}-1  \right| <\varepsilon \\
-\left| \frac{x-3}{x+1}  -1\right| = \left| \frac{2x-2}{x+1}  \right| =  
+\left| \frac{x-3}{x+1}  -1\right| = \left| \frac{2x-2}{x+1}  \right| =  \frac{2|x-1|}{|x+1|}  
 }$$
