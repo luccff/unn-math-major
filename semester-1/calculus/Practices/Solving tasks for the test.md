@@ -204,7 +204,7 @@ $$\displaylines{
 ---
 ### 5) Предел функции.
 1) Написать определение ${\displaystyle\lim_{ x \to x_{ 0 } }f(x) =A}$ и дать геометрическую интерпретацию
-Рассмотрим функцию ${y = f(x)}$, которая определена на некотором промежутке ${\mathcal{X}}$, за исключением, возможно, точки ${a}$
+Рассмотрим функцию ${y = f(x)}$, которая определена на некотором промежутке ${\mathcal{X}}$, за исключением, возможно, точки ${x_{ 0 }}$
 $$\displaylines{
 \lim_{ x \to x_{ 0 } } {f(x) = A} \quad \forall{\varepsilon>0} \quad \exists\delta>0 \quad \forall{x \in \mathcal{X}}: (0<|x-x_{ 0 }|<\delta \implies |f(x)-A| < \varepsilon)
 }$$
@@ -224,5 +224,7 @@ $$\displaylines{
 $$\displaylines{
 \lim_{ x \to x_{ 0 } } {f(x) = A} \quad \forall{\varepsilon>0} \quad \exists\delta>0 \quad \forall{x \in \mathcal{X}}: (0<|x-x_{ 0 }|<\delta \implies |f(x)-A| < \varepsilon) \\
 0<|x-1|<\delta \implies  \left| \frac{x-3}{x+1}-1  \right| <\varepsilon \\
-\left| \frac{x-3}{x+1}  -1\right| = \left| \frac{2x-2}{x+1}  \right| =  \frac{2|x-1|}{|x+1|}  
+\left| \frac{x-3}{x+1}  -1\right| = \left| \frac{2x-2}{x+1}  \right| =  \frac{2|x-1|}{|x+1|}  \leq 2|x-1| <\varepsilon \\
+|x-1|< \frac{\varepsilon}{2} \\
+\delta = \frac{\varepsilon}{2}
 }$$
