@@ -228,3 +228,8 @@ $$\displaylines{
 |x-1|< \frac{\varepsilon}{2} \\
 \delta = \frac{\varepsilon}{2}
 }$$
+$$\displaylines{
+\ln(1 + e^{ 2x }) = 2x + \ln(1 + e^{ -2x }) \\
+\text{ при } x \to \infty\ \implies  e^{ -2x } \to 0  \hookrightarrow\ln(1+e^{ -2x }) \sim e^{ -2x } \text{ по тейлору около } e^{ -2x } \\
+\lim_{ x \to \infty } {(\ln(1 + e^{ 2x })-2x)} = \lim_{ x \to \infty } ({(2x + e^{ -2x }) -2x}) = \lim_{ x \to \infty } {e^{ -2x }} = 0
+}$$
