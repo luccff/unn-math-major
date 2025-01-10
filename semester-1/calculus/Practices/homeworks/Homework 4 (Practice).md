@@ -65,17 +65,19 @@ T_4 &: \binom{4}{4} \cdot 3^4 = 1 \cdot 81 = 81
 ## Exercise 26.2
 $$\displaylines{
 \left( \frac{1}{3} + \frac{2}{3}x \right)^{10} = \sum_{k=0}^{10} \binom{10}{k} \left( \frac{1}{3} \right)^{10-k} \left( \frac{2}{3}x \right)^k \\ 
-T_k = \binom{10}{k} \cdot \frac{1^{10-k} \cdot 2^k}{3^{10}} x^k \\ 
-T_0: \binom{10}{0} \cdot 2^0 = 1 \\
-T_1: \binom{10}{1} \cdot 2^1 = 10 \cdot 2 = 20 \\
-T_2: \binom{10}{2} \cdot 2^2 = 45 \cdot 4 = 180 \\
-T_3: \binom{10}{3} \cdot 2^3 = 120 \cdot 8 = 960 \\
-T_4: \binom{10}{4} \cdot 2^4 = 210 \cdot 16 = 3360 \\ 
-T_5: \binom{10}{5} \cdot 2^5 = 252 \cdot 32 = 8064 \\
-T_6: \binom{10}{6} \cdot 2^6 = 210 \cdot 64 = 13440 \\
-T_7: \binom{10}{7} \cdot 2^7 = 120 \cdot 128 = 15360 \\ 
-T_8: \binom{10}{8} \cdot 2^8 = 45 \cdot 256 = 11520 \\ 
-T_9: \binom{10}{9} \cdot 2^9 = 10 \cdot 512 = 5120 \\
-T_{10}: \binom{10}{10} \cdot 2^{10} = 1 \cdot 1024 = 1024 \\
+\begin{align}
+&T_k = \binom{10}{k} \cdot \frac{1^{10-k} \cdot 2^k}{3^{10}} x^k \\ 
+&T_0: \binom{10}{0} \cdot 2^0 = 1 \\
+&T_1: \binom{10}{1} \cdot 2^1 = 10 \cdot 2 = 20 \\
+&T_2: \binom{10}{2} \cdot 2^2 = 45 \cdot 4 = 180 \\
+&T_3: \binom{10}{3} \cdot 2^3 = 120 \cdot 8 = 960 \\
+&T_4: \binom{10}{4} \cdot 2^4 = 210 \cdot 16 = 3360 \\ 
+&T_5: \binom{10}{5} \cdot 2^5 = 252 \cdot 32 = 8064 \\
+&T_6: \binom{10}{6} \cdot 2^6 = 210 \cdot 64 = 13440 \\
+&T_7: \binom{10}{7} \cdot 2^7 = 120 \cdot 128 = 15360 \\ 
+&T_8: \binom{10}{8} \cdot 2^8 = 45 \cdot 256 = 11520 \\ 
+&T_9: \binom{10}{9} \cdot 2^9 = 10 \cdot 512 = 5120 \\
+&T_{10}: \binom{10}{10} \cdot 2^{10} = 1 \cdot 1024 = 1024 \\
+\end{align} \\
 \text{Answer: } 15360
 }$$
