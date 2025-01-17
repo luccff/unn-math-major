@@ -37,60 +37,6 @@ $$
    A^{-1} = \frac{1}{\det(A)} \cdot \operatorname{adj}(A).
    $$
 
----
-
-### Пример
-
-Пусть:
-$$
-A = \begin{pmatrix}
-2 & 3 \\
-1 & 4
-\end{pmatrix}.
-$$
-
-1. **Определитель:**
-   $$
-   \det(A) = 2 \cdot 4 - 3 \cdot 1 = 8 - 3 = 5.
-   $$
-
-2. **Миноры и алгебраические дополнения:**
-   $M_{11} = \det\begin{pmatrix} 4 \end{pmatrix} = 4, \quad A_{11} = (-1)^{1+1} \cdot 4 = 4$,
-   $M_{12} = \det\begin{pmatrix} 1 \end{pmatrix} = 1, \quad A_{12} = (-1)^{1+2} \cdot 1 = -1$,
-   $M_{21} = \det\begin{pmatrix} 3 \end{pmatrix} = 3, \quad A_{21} = (-1)^{2+1} \cdot 3 = -3$,
-    $M_{22} = \det\begin{pmatrix} 2 \end{pmatrix} = 2, \quad A_{22} = (-1)^{2+2} \cdot 2 = 2$.
-
-3. **Матрица алгебраических дополнений:**
-   $$
-   \begin{pmatrix}
-   4 & -1 \\
-   -3 & 2
-   \end{pmatrix}.
-   $$
-4. **Транспонированная матрица (присоединённая матрица):**
-   $$
-   \operatorname{adj}(A) =
-   \begin{pmatrix}
-   4 & -3 \\
-   -1 & 2
-   \end{pmatrix}.
-   $$
-5. **Обратная матрица:**
-   $$
-   A^{-1} = \frac{1}{\det(A)} \cdot \operatorname{adj}(A) =
-   \frac{1}{5} \cdot
-   \begin{pmatrix}
-   4 & -3 \\
-   -1 & 2
-   \end{pmatrix} =
-   \begin{pmatrix}
-   \frac{4}{5} & -\frac{3}{5} \\
-   -\frac{1}{5} & \frac{2}{5}
-   \end{pmatrix}.
-   $$
-
----
-
 ### Свойства обратной матрицы
 
 1. **Уникальность**:

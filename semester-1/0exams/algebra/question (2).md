@@ -4,7 +4,7 @@
 Это числа вида ${\displaystyle z = a + bi}$, где ${\displaystyle a, \ b \in R}$, а ${\displaystyle  i }$ - мнимая единица, такая, что ${\displaystyle i^{ 2 } = -1}$.
 $$\displaylines{
 a - \text{ вещественная часть числа } z: \mathrm{Re} (z) = a \\
-b - \text{ минмая часть числа } z: \mathrm{Im} (z) = b
+b - \text{ мнимая часть числа } z: \mathrm{Im} (z) = b
 }$$
 ### Сложение комплексных чисел
 Для двух комплексных чисел ${\displaystyle z_{1} = a_{1} + b_{1}i}$ и ${\displaystyle z_{2} = a_{2} + b_{2}i}$ сумма определяется как:
@@ -14,7 +14,7 @@ z_{1}+z_{2} = (a_{1}+a_{2}) + (b_{1}+b_{2})i
 ### Умножение комплексных чисел
 Для двух комплексных чисел ${\displaystyle z_{1} = a_{1} + b_{1}i}$ и ${\displaystyle z_{2} = a_{2} + b_{2}i}$ произведение определяется как:
 $$\displaylines{
-z_{1} \cdot  z_{2} = (a_{1}a_{2} - b_{1}b_{2}) + (a_{1}b_{2} - a_{2}b_{1})i
+z_{1} \cdot  z_{2} = (a_{1}a_{2} - b_{1}b_{2}) + (a_{1}b_{2} + a_{2}b_{1})i
 }$$
 ### Поле комплексных чисел
 Множество ${\displaystyle \mathbb{C}}$ образует поле, то есть оно замкнуто относительно сложения, вычитания, умножения и деления и удовлетворяет следующим свойствам:
@@ -32,12 +32,15 @@ z_{1} \cdot  z_{2} = (a_{1}a_{2} - b_{1}b_{2}) + (a_{1}b_{2} - a_{2}b_{1})i
 $$\displaylines{
 z_{1} \cdot  ( z_{2} + z_{3}) = z_{1}\cdot z_{2} + z_{1} \cdot z_{3}
 }$$
-
+4. Деление комплексных чисел выполняется через умножение на сопряженное число. Например, если ${\displaystyle z = a+bi}$ и ${\displaystyle w = c+di \neq 0}$, то:
+$$\displaylines{
+\frac{z}{w} = \frac{(a+bi)(c-di)}{c^{ 2 }+d^{ 2 }}
+}$$
 ### Сопряжение комплексного числа
 Сопряжение числа ${\displaystyle  z = a + bi}$ обозначается как ${\displaystyle \overline{z} = a-bi}$
 Свойства:
 1. ${\displaystyle \overline{\overline{z}} = z}$
-2. ${\displaystyle \overline{z_{1}+z_{1}} = \overline{z_{1}} + \overline{z_{2}}}$
+2. ${\displaystyle \overline{z_{1}+z_{2}} = \overline{z_{1}} + \overline{z_{2}}}$
 3. ${\displaystyle \overline{z_{1} \cdot z_{2}} = \overline{z_{1}} \cdot \overline{z_{2}}}$
 4. ${\displaystyle \overline{z^{ -1 }} = (\overline{z})^{ -1 }}$
 5. ${\displaystyle z \cdot \overline{z} = |z|^{ 2 }, \   \quad|z| = \sqrt{ a^{ 2 }+b^{ 2 } }}$
