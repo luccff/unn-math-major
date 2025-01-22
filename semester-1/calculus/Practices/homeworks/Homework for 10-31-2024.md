@@ -54,4 +54,6 @@ $$\displaylines{
 }$$
 
 ---
-
+$$\displaylines{
+I = \int_{0}^{\pi/2} \arccos{\left( \frac{\cos{(x)}}{1+2\cos{(x)}} \right)} \, dx 
+}$$

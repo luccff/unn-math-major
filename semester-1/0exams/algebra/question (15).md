@@ -41,7 +41,7 @@ $$
 
 **Линейная оболочка** системы векторов $\{\vec{v}_1, \vec{v}_2, \dots, \vec{v}_k\}$ — это множество всех линейных комбинаций этих векторов:
 $$
-\operatorname{span}\{\vec{v}_1, \vec{v}_2, \dots, \vec{v}_k\} = \left\{ \sum_{i=1}^k \lambda_i \vec{v}_i \;\middle|\; \lambda_i \in F \right\}.
+\operatorname{span}\{\vec{v}_1, \vec{v}_2, \dots, \vec{v}_k\} = \left\{ \sum_{i=1}^k \lambda_i \vec{v}_i \ \middle| \ \lambda_i \in F \right\}.
 $$
 Свойства
 1. Линейная оболочка всегда является подпространством $V$.

@@ -17,14 +17,41 @@ $$\displaylines{
 Свойства скалярного произведения:
 1. Положительная определенность скалярного произведения $(\vec{a}, \vec{a}) \stackrel{ \text{def} }{ = } \vec{a}^{2} \geq 0 \ \ \forall \overline{a} \in \overline{E}^{ 3 }$.
 2. Коммутативность: ${\displaystyle \vec{a} \cdot \vec{ b} = \vec{b} \cdot \vec{a}}$.
-3. Дистрибутивность: ${\displaystyle \vec{a} \cdot (\vec{b} + \vec{c}) = \vec{a} \cdot \vec{ b} + \vec{a} \cdot \vec{ c}}$
+3. Дистрибутивность: ${\displaystyle (\vec{a}, \ \vec{b}+ \vec{c}) = (\vec{a}, \ \vec{b}) + (\vec{a}, \ \vec{c}), \  \quad \forall{ \vec{a}, \ \vec{b}, \ \vec{c} \in \overline{E}^{ 3 }}}$.
 Доказательство:
+Свойство косинусов эквивалентно свойству дистрибутивности. 
 $$\displaylines{
-\vec{a} = (a_{1}, \  a_{2}, \  a_{3}), \  \vec{b} = (b_{1}, \  b_{2}, \  b_{3}), \  \vec{c} = (c_{1}, \  c_{2}, \  c_{3}) \\
-\vec{a} \cdot  ( \vec{b} + \vec{c}) = a_{1}(b_{1}+c_{1}) + a_{2}(b_{2}+c_{2}) + a_{3}(b_{3}+c_{3}) = \\
-= a_{1}b_{1} + a_{1}c_{1} + a_{2}b_{2} + a_{2}c_{2} + a_{3}b_{3} + a_{3}c_{3} = \\
-= (a_{1}b_{1} + a_{2} b_{2} + a_{3} b_{3}) + ( a_{1} c_{1} + a_{2}c_{2} + a_{3}c_{3}) = \vec{a} \cdot  \vec{b} + \vec{a} \cdot  \vec{ c}
+\vec{AC} + \vec{CB} = \vec{AB} \\ 
+\vec{CB} = \vec{AB} - \vec{AC} = \vec{c} - \vec{b} \\
+\vec{CB}^{ 2 } = |\vec{c}-\vec{b}|^{ 2 } = |\vec{c}|^{ 2 } + |\vec{b}|^{ 2 } - 2\cos{(\alpha)} \cdot |\vec{c}| \cdot |\vec{b}| = |\vec{c}|^{ 2 } + |\vec{b}|^{ 2 } - 2(\vec{c}, \  \vec{b})
 }$$
+Пусть ${\displaystyle \vec{b} \to - \vec{b}}$:
+$$\displaylines{
+|\vec{c}+\vec{b}| ^{ 2 } = (\vec{c}, \  \vec{c}) + (\vec{b}, \  \vec{b}) + 2 (\vec{c}, \  \vec{b})
+}$$
+Пусть ${\displaystyle \vec{b} \to (\vec{x} + \vec{y})}$:
+$$\displaylines{
+|\vec{c}+ (\vec{x}+ \vec{y})| ^{ 2 } = (\vec{c}, \  \vec{c}) + |(\vec{x}+\vec{y})|^{ 2 } + 2(\vec{c}, \   \vec{x}+\vec{y}) \\
+\text{ Где } |(\vec{x}+\vec{y})|^{ 2 } = (\vec{x}, \  \vec{x}) + (\vec{y}, \  \vec{y}) + 2(\vec{x}, \  \vec{y}) \\
+\text{ Тогда } |\vec{c}+ (\vec{x}+ \vec{y})| ^{ 2 } = (\vec{c}, \  \vec{c}) + (\vec{x}, \  \vec{x}) + (\vec{y}, \  \vec{y}) + 2(\vec{x}, \  \vec{y}) + 2(\vec{c}, \   \vec{x}+\vec{y}) \\
+}$$
+Рассмотрим переход
+$$\displaylines{
+ (\vec{c}+(\vec{x}+\vec{y}))^{ 2 } = \vec{c}^{ 2 } + \vec{x}^{ 2 } + \vec{y}^{ 2 } + 2(\vec{x}, \  \vec{y}) + 2(\vec{c}, \  \vec{x}+ \vec{y})  \quad (1) \\
+ ((\vec{c}+\vec{x}) + \vec{y})^{ 2 } = \vec{c}^{ 2 } + \vec{x}^{ 2 } + \vec{y}^{ 2 }+ 2(\vec{c}, \  \vec{x}) + 2(\vec{c}+\vec{x}, \  \vec{y})  \quad (2) \\
+ (1)-(2) \implies (\vec{x}, \  \vec{y}) + (\vec{c}, \   \vec{x} + \vec{y}) -  (\vec{c}, \  \vec{x}) -(\vec{c} + \vec{x}, \   \vec{y}) = 0  \\
+ \vec{y} \to  -\vec{y}  \\
+ -(\vec{x}, \  \vec{y}) + (\vec{c}, \  \vec{x} - \vec{y}) - (\vec{c}, \  \vec{x}) + (\vec{c}+ \vec{x}, \  \vec{y}) = 0  \quad ( 3) \\ \\
+ (1) - (2) + (3) = (\vec{c} , \  \vec{x} + \vec{y}) + (\vec{c}, \  \vec{x} - \vec{y}) - 2(\vec{c}, \  \vec{x}) = 0 
+}$$
+Пусть ${\displaystyle \vec{x} + \vec{y} = \vec{a}}$ и ${\displaystyle \vec{x} - \vec{y} = \vec{b}}$:
+$$\displaylines{
+(\vec{c}, \   \vec{a}) + (\vec{c}, \  \vec{b}) = 2(\vec{c}, \   \vec{x}) \\
+\vec{x} = \frac{\vec{a} + \vec{b}}{2} \\
+(\vec{c}, \   \vec{a}) + (\vec{c}, \  \vec{b}) = 2\left( \vec{c}, \ \frac{\vec{a} + \vec{b}}{2}   \right) = (\vec{c}, \  \vec{a}+ \vec{b}) \\
+}$$
+Доказано.
+
 4. Умножение на скаляр: ${\displaystyle (k\vec{a}) \cdot \vec{b} = k(\vec{a}\cdot\vec{b})}$, ${\displaystyle k \in \mathbb{R}}$.
 Доказательство:
 $$\displaylines{
@@ -32,7 +59,9 @@ $$\displaylines{
 (k\vec{a}) \cdot  \vec{b} = (ka_{1})b_{1} + (ka_{2})b_{2} + (ka_{3})b_{3} =  \\
 = k(a_{1}b_{1} + a_{2}b_{2} + a_{3}b_{3}) = k(\vec{a} \cdot  \vec{ b})
 }$$
-5. Связь с длинной вектора: ${\displaystyle \vec{a} \cdot \vec{a} = |\vec{a}| ^{  2 }}$
+
+
+Связь с длинной вектора: ${\displaystyle \vec{a} \cdot \vec{a} = |\vec{a}| ^{  2 }}$
 Доказательство:
 $$\displaylines{
 \vec{a} \cdot  \vec{a} = a_{1}^{ 2 }+a_{2}^{ 2 } + a_{3}^{ 2 } 
@@ -42,8 +71,6 @@ $$\displaylines{
 |\vec{a}|^{ 2 } = a_{1}^{ 2 }+a_{2}^{ 2 }+a_{3}^{ 2 } \\
 \vec{a} \cdot  \vec{a} = |\vec{a}|^{ 2 }
 }$$
-6. ${\displaystyle (\vec{a}, \vec{b} + \vec{c}) = (\vec{a}, \vec{b}) + (\vec{a}, \vec{c}), \ \ \forall \vec{a}, \vec{b}, \vec{c} \in \overline{E}^{ 3 }}$
-
 Длинна вектора ${\displaystyle \vec{a} = (a_{1}, \ a_{2})}$ равна:
 $$\displaylines{
 |\vec{a}| = \sqrt{ \vec{a} \cdot  \vec{a} } = \sqrt{ {a}_{ 1 }^{ 2 } + {a}_{ 2 }^{ 2 } }
@@ -53,7 +80,5 @@ $$\displaylines{
 \cos{(\vec{a}, \  \vec{b})} = \frac{\vec{a} \cdot  \vec{b}}{|\vec{a}| \cdot  | \vec{b}|} 
 }$$
 
-Вещественное векторное пространство $V$ называется Евклидовым векторным пространством, если каждой упорядоченной паре векторов $\vec{a}, \vec{b}$ поставлено в соответствие число $(\vec{a}, \vec{b})$, которое называется скалярным произведением. При этом должны выполнены свойства скалярного произведения. 
-$$\displaylines{
-\vec{a}, \vec{b} \to (\vec{a}, \vec{b})
-}$$
+Связь скалярного произведения и умножение вектора на число.
+Умножение вектора на число изменяет длину вектора, а скалярное произведение пропорционально произведению длин векторов. Если вектор ${\displaystyle \vec{a}}$ удлиняется в ${\displaystyle \lambda}$ раз, то его "вклад" в скалярное произведение также увеличивается в ${\displaystyle \lambda}$ раз.
