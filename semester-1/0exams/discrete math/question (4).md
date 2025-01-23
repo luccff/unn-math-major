@@ -35,3 +35,13 @@ A_{ 1 } \times  A_{ 2 } \times \dots \times A_{ n } = \{ (x_{1}, \  x_{2}, \ \do
 ${\displaystyle n = 1}$ - верно.
 Пусть верна для ${\displaystyle n = k}$.
 Докажем для ${\displaystyle n = k+1}$. Обозначим ${\displaystyle |A_{ 1 }| = m_{ 1 }, \ \dots, \ |A_{ k }| = m_{k}}$. По предположению ${\displaystyle |A_{ 1 } \times \dots \times A_{ k }| = m_{1} \cdot \dots \cdot m_{ k }}$. Возьмем какую-нибудь вектор-строку ${\displaystyle (x_{1}, \ x_{2}, \ \dots, \ x_{k})}$ из ${\displaystyle A_{ 1 }\times\dots\times A_{ k }}$ и припишем ${\displaystyle a_{ k+1 } \in A_{ k+1 }}$. Это можно сделать ${\displaystyle m_{ k+1 }}$ раз. Получим ${\displaystyle m_{ k+1 }}$ различных векторов из ${\displaystyle A_{ 1 } \times \dots \times A_{ k+1 }}$. Получим ${\displaystyle m_{1} \cdot \dots \cdot m_{ k+1 }}$ различных векторов ${\displaystyle \implies}$ теорема верна для ${\displaystyle n = k+1}$.
+
+
+Характеристический вектор подмножества.
+Пусть дано множество $S = \{{s_{1}, s_{2}, \dots, s_{n}}\}$. Для любого подмножества ${A \subseteq S}$ можно определить **характеристический вектор** как $n$-битную строку ${\mathbf{b} = (b_{1}, b_{2}, \dots, b_{n})}$, где:
+$$\displaylines{
+\begin{cases}
+b_{i} = 1 & s_{ i } \in  A  \\
+b_{i} = 0  & s_{ i } \not\in A
+\end{cases}
+}$$
