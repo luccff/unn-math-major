@@ -25,3 +25,10 @@ F(x, \  y) = x^{ 3 }+y^{ 3 }-3xy = 0 \\
 \frac{\partial F}{\partial x} = 3x^{ 2 }-3y, \   \quad \frac{\partial F}{\partial y} = 3y^{ 2 }-3x \\
 y'(x) = -\frac{3x^{ 2 }-3y}{3y^{ 2 }-3x} 
 }$$
+
+$$\displaylines{
+f(x, \  y) = \begin{cases}
+\dfrac{2xy}{\sqrt{ x^{ 2 } + y^{ 2 } }}  & (x, \  y) \neq (0, \  0) \\
+0  & (x, \  y) = (0, \  0) 
+\end{cases}
+}$$
