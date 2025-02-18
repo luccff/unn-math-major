@@ -115,19 +115,19 @@ $$\displaylines{
 $$\displaylines{
 \text{ Если } A\sim \mathbb{R}, \ \text{ то } A \text{ имеет можщность } \textbf{ континуума }
 }$$
-Теорема Кантора.
-$$\displaylines{
-\forall{\text{ ин. } A} \quad |A|<|2^{ A }| \\
-\text{ Доказательство: } |A| \leq |2^{ A} \quad \exists i: A \to  2^{ A } \\
-\text{ Докажем, что  } A \not \sim 2^{ A } \\
-\text{ От противного. } \text{ Пусть  } \exists\text{ биекция } f:A\to 2^{ A } \ f(x) \subseteq A \\
-M = \{ x \in A | x \not \in f(x) \} \subseteq A \quad M \in  2^{ A } \\
-f: A \to  2^{ A } \\
-m \longmapsto M = f(m) \\
-\text{ Вопрос: } m \in f(m) ? \\
-m \in  f(m) = M \implies  m \cancel{\in } f(m) \text{ противоречие } \\
-m \cancel{\in}  f(m) = M \implies  m \in f(m) \text{ противоречие }
-}$$
+    Теорема Кантора.
+    $$\displaylines{
+    \forall{\text{ ин. } A} \quad |A|<|2^{ A }| \\
+    \text{ Доказательство: } |A| \leq |2^{ A} \quad \exists i: A \to  2^{ A } \\
+    \text{ Докажем, что  } A \not \sim 2^{ A } \\
+    \text{ От противного. } \text{ Пусть  } \exists\text{ биекция } f:A\to 2^{ A } \ f(x) \subseteq A \\
+    M = \{ x \in A | x \not \in f(x) \} \subseteq A \quad M \in  2^{ A } \\
+    f: A \to  2^{ A } \\
+    m \longmapsto M = f(m) \\
+    \text{ Вопрос: } m \in f(m) ? \\
+    m \in  f(m) = M \implies  m \cancel{\in } f(m) \text{ противоречие } \\
+    m \cancel{\in}  f(m) = M \implies  m \in f(m) \text{ противоречие }
+    }$$
 Бесконечная иерархия мощностей.
 $$\displaylines{
 |\mathbb{N}| < |2^{ \mathbb{N} }| < |2^{ 2^{ \mathbb{N} } }| < \dots 

@@ -25,3 +25,36 @@ yRz
 \textbf{ Симметричность: } \forall{x, \  y \in  \mathbb{N} }: xRy \implies yRx \\ 
 \text{ Пример: } x = 1, \   y = 2: 1 \leq 4 \cancel{\implies } 2 \leq 1 - \text{ не симметрично. }
 }$$
+1. Дан универс ${\displaystyle U = \{ 1, \ 2, \ 3, \  \dots, \ n \}}$. Охарактеризовать бинарное отношение бинарное отношение на ${\displaystyle 2^{ U }}$ между произвольными множествами ${\displaystyle A}$ и ${\displaystyle B}$, ${\displaystyle A R B}$, если ${\displaystyle A\overline{B} = \varnothing}$.
+$$\displaylines{
+ARB \iff A \cap \overline{B} = \varnothing \iff A \subseteq B.
+}$$
+Свойства отношения:
+1. Рефлексивность: ${\displaystyle \forall{A:} A \subseteq A \implies ARA}$.
+2. Антисимметричность: ${\displaystyle \forall{A, \ B}: A \subseteq B \wedge B \subseteq A \implies A = B}$.
+3. Транзитивность: ${\displaystyle \forall{A, \ B, \ C}: A \subseteq B \wedge B \subseteq C \implies A \subseteq C}$.
+Отношение является частичным порядком.
+
+1. Дано множество ${\displaystyle A}$ и в нем подмножества ${\displaystyle B, \ C}$, причем ${\displaystyle |A -B \cap C| = 8}$, ${\displaystyle |B| = 5, \ |C-B| = 1, \  |B \cap C| = 3}$. Сколько имеется таких подмножеств ${\displaystyle X \subseteq A}$, что ${\displaystyle |X-(B \cup C)| = 2, \  |X \cap (B-C)| = 2}$?
+
+$$\displaylines{
+C = (C-B) \cup (B \cap C) \implies |C| = 1 + 3 = 4 \\
+B = (B - C) \cup  (B \cap C) \implies |B - C| = 5 - 3 = 2 \\
+|A| = |A - BC| + |BC| = 8 + 3 = 11 \\
+|B \cup C| = |B| + |C| - |B \cap C| = 5 + 4 - 3 = 6 \\
+|A - (B \cup C)| = |A| - |B \cup C| = 11 - 6 = 5. \\
+\\
+X - (B \cup  C) = X \cap  (A - (B \cup C)) \implies \binom{5}{2} = 10 \\
+|B - C| = 2 \implies \binom{2}{2} = 1 \\
+|B \cap C| = 3, \  |C-B| = 1 \implies \text{ ост. элементов } 4 \\
+\implies 10 \cdot  1 \cdot  2^{ 4 } = 160.
+}$$
+
+2. Дано множество ${\displaystyle A}$ и в нем подмножества ${\displaystyle B, \ C}$, причем ${\displaystyle |B| = 5, \ |C| = 3, \  |B \cup C | = 7, \  |A-B| = 7.}$ Сколько имеется таких подмножеств ${\displaystyle X \subseteq A }$, что ${\displaystyle X \cap(C-B) = \varnothing}$, ${\displaystyle |X \cap B|\geq 4}$, ${\displaystyle |X-(B \cup C)| = 2}$?
+
+3. Сколько четырех элементных подмножеств в множестве ${\displaystyle 2^{ \{ a, \ b, \ c, \ d \} } \otimes 2^{ \{ c, \ d, \ e \} }}$?
+$$\displaylines{
+|A| = 2^{ 4 } = 16, \  |B| = 2^{ 3 } = 8 \\
+|A \otimes B| = |A| + |B| - 2|A \cap  B| = 16 - 8 - 2 \cdot 2 ^{ 2 } = 16 \\
+\binom{16}{4} = 1820.
+}$$
