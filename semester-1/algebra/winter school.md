@@ -216,3 +216,102 @@ $$\displaylines{
 
 \end{aligned}
 }$$
+
+---
+Доказательство
+$$\displaylines{
+\Delta  = \begin{vmatrix}
+1 & 8 & 5  \\
+5 & 1 & 8  \\
+8 & 5 & 1
+\end{vmatrix}  \ \vdots \  37 \\
+\begin{cases}
+185  \ \vdots \   37 \\
+518  \ \vdots \  37 \\
+851  \ \vdots \ 37  
+\end{cases} \implies  \Delta  \ \vdots \ 37 \\
+\text{ Первый и второй столбце надо умножить на 100 и на 10 соответственно. }
+}$$
+$$\displaylines{
+\begin{vmatrix}
+2 & 2 & \dots  & \dots  & 2 \\
+2 & 3 & 2 & \dots  & 2 \\
+2 & 2 & 4 & \dots  & 2 \\
+\dots  & \dots  &  \dots   & \ddots \ & 2 \\
+2 & 2 & \dots  & \dots  & n+1   
+\end{vmatrix} \\ \\
+   \Delta = \begin{vmatrix}
+   2 & 2 & \dots & \dots & 2 \\
+   0 & 1 & 0 & \dots & 0 \\
+   0 & 0 & 2 & \dots & 0 \\
+   \vdots & \vdots & \vdots & \ddots & 0 \\
+   0 & 0 & \dots & \dots & n-1
+   \end{vmatrix} = 2 \cdot 1 \cdot 2 \cdot 3 \cdot \dots \cdot (n-1) = 2\cdot (n-1)!
+}$$
+$$\displaylines{
+A, \  B - n\times n \text{ матрицы } \\
+\text{ Всегда ли верно что } AB =  BA ? \text{ нет }\\ 
+\det(AB) = \det(BA)? \text{ да }
+}$$
+$$\displaylines{
+\begin{pmatrix}
+2 & 0 \\
+0 & 3
+\end{pmatrix}^{ -1 } = \begin{pmatrix}
+\dfrac{1}{2}  & 0 \\
+0 & \dfrac{1}{3}
+\end{pmatrix}\\
+\begin{pmatrix}
+2 & 1 \\
+0 & 1
+\end{pmatrix} ^{ -1 } = \frac{1}{2}\begin{pmatrix}
+1 & -1 \\
+0 & 2
+\end{pmatrix}\\
+\begin{pmatrix}
+3 & 1 \\
+6 & 2
+\end{pmatrix} ^{ -1 } \cancel\exists 
+}$$
+$$\displaylines{
+A = \begin{pmatrix}
+1 & -1 \\
+2 & -2 \\
+5 & -5
+\end{pmatrix} \\
+\text{ rank}(A) = 1
+}$$
+$$\displaylines{
+A = \begin{pmatrix}
+0 & 0 & 1 \\
+5 & 0 & 0 \\
+0 & 0 & 0
+\end{pmatrix}  \\
+\text{ rank}(A) = 2 \\
+\begin{vmatrix}
+0 & 1 \\
+5 & 0
+\end{vmatrix} = -5 \neq  0
+}$$
+$$\displaylines{
+A = \begin{pmatrix}
+1 & 0 & 0  & 2 & 1 \\
+1 & 0 & 0 & 3 & -1 \\
+2 & 0 & 0 & 5 & 0
+\end{pmatrix}
+}$$
+$$\displaylines{
+\begin{pmatrix}
+0 & 1 & 1 & 0 & 0 \\
+1 & 1 & 0 & 0 & 0 \\
+1 & 0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 & 1 \\
+1 & 0 & 0 & 1 & 1 
+\end{pmatrix}
+}$$
+$$\displaylines{
+f(x) = (x-1)(x^{ 2 }-1)(x^{ 3 }-1)(x^{ 4 }-1)  = (x-1)^{ 4 }(x+1)^{ 2 }(x^{ 2 }+x+1)(x^{ 2 }+1) \\
+f'= (x-1)^{ 3 }(x+1)g(x) \\
+\gcd{f, \  f'} = (x-1)^{ 3 }(x+1) \\
+\frac{f}{\gcd(f, \  f')} = (x-1)(x+1)(x^{ 2 }+x+1)(x^{ 2 }+1)
+}$$
