@@ -37,7 +37,7 @@ du = \frac{dw}{2u} \\
 =2\ln(u ^{  2 } + 4) - \frac{3}{2}\arctan{\left( \frac{u}{2} \right)} + C = 2\ln((x+2)^{ 2 }+4) - \frac{3}{2}\arctan{\left( \frac{x+2}{2} \right)} + C
 }$$
 $$\displaylines{
-3)\int \frac{\sin{(\sqrt[3]{ x })}}{\sqrt[3]{ x }}dx = \int \frac{\sin{(t)}}{t} 3t^{ 2 }dt = 3\int t\sin{(t)}dx = -3(t\cos{(t)} + \sin{(t)}) + C = -3\sqrt[3]{ x }\cos{(\sqrt[3]{ x })} + 3\sin{(\sqrt[3]{ x })} + C\\-e^{ x }\cos{(x)} +e^{ x }\sin{(x)}
+3)\int \frac{\sin{(\sqrt[3]{ x })}}{\sqrt[3]{ x }}dx = \int \frac{\sin{(t)}}{t} 3t^{ 2 }dt = 3\int t\sin{(t)}dx = -3(t\cos{(t)} + \sin{(t)}) + C = -3\sqrt[3]{ x }\cos{(\sqrt[3]{ x })} + 3\sin{(\sqrt[3]{ x })} + C\\
 \begin{array}{|c|c|}
 \hline 
 D & I \\

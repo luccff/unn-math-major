@@ -58,3 +58,4 @@ $$\displaylines{
 |A \otimes B| = |A| + |B| - 2|A \cap  B| = 16 - 8 - 2 \cdot 2 ^{ 2 } = 16 \\
 \binom{16}{4} = 1820.
 }$$
+
