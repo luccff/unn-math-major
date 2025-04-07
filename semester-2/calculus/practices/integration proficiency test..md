@@ -2,7 +2,7 @@
 $$\displaylines{
 \begin{aligned}
 &\  \begin{aligned}\text{i}.
-\int \frac{(\sqrt{ x } + \sqrt[3]{ x })^{ 2 }}{x^{ 2 }}  \, dx  &= \int_{}^{} \left( \frac{x}{x^{ 2 }} + \frac{2x^{ 5/6 }}{x^{ 2 }} + \frac{x^{ 2/3 }}{x^{ 2 }} \right)  \, dx =  \\& =  \int_{}^{} (x^{ -1 } + 2x^{ -7/6 } + x^{ -4/3 }) \, dx = \ln|x| - 12x^{ -1/6 } - 3 x^{ -1/3 } + C
+\int \frac{(\sqrt{ x } + \sqrt[3]{ x })^{ 2 }}{x^{ 2 }}  \, dx  &= \int_{}^{} \left( \frac{x}{x^{ 2 }} + \frac{2x^{ 5/6 }}{x^{ 2 }} + \frac{x^{ 2/3 }}{x^{ 2 }} \right)  \, dx =  \\& =  \int_{}^{} (x^{ -1 } + 2x^{ -7/6 } + x^{ -4/3 }) \, dx = \ln|x| - 12x^{ -1/6 } - 3x^{ -1/3 } + C
 \end{aligned} \\
 & \begin{aligned}\text{ ii. }\
 \int_{0}^{\pi/3} e^{ x }\sin{(x)} \, dx &= \frac{e^{ x }}{2}\big[\sin{(x)} - \cos{(x)}\big] \bigg|_{ 0 }^{ \pi/3 } = \\ & = \frac{e^{ \pi/3 }}{2}\left( \sin{\left( \frac{\pi}{3}  \right)} - \cos{\left( \frac{\pi}{3} \right)} \right) - \frac{e^{ 0 }}{2}(\sin{(0)} - \cos{(0)}) = \\ & = \frac{e^{ \pi/3 }}{2}\left( \frac{\sqrt{ 3 }}{2} - \frac{1}{2} \right) + \frac{1}{2}
