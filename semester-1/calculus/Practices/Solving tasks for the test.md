@@ -219,7 +219,9 @@ $$\displaylines{
 \displaystyle\lim_{ x \to x_{ 0 }-0 } {f(x)} = A
 \end{matrix}
 }$$
-![[Pasted image 20241223121305.png]] ![[Pasted image 20241223121316.png]] ![[Pasted image 20241223121331.png]]
+![[Pasted image 20241223121305.png]] 
+![[Pasted image 20241223121316.png]] 
+![[Pasted image 20241223121331.png]]
 3) Доказать по определению ${\displaystyle\lim_{ x \to 1 }\dfrac{x-3}{x+1} = - 1}$
 $$\displaylines{
 \lim_{ x \to x_{ 0 } } {f(x) = A} \quad \forall{\varepsilon>0} \quad \exists\delta>0 \quad \forall{x \in \mathcal{X}}: (0<|x-x_{ 0 }|<\delta \implies |f(x)-A| < \varepsilon) \\
