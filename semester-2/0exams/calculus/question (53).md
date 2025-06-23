@@ -1,4 +1,4 @@
-**Различные метрики.**  
+Различные метрики.  
 В $\mathbb{R}^n$ сходимость последовательности не зависит от выбора метрики. Например, для точек $A = (a_1, \ldots, a_n)$, $B = (b_1, \ldots, b_n)$ возможны метрики:
 $$\displaylines{
 \rho_1(A, B) = \sqrt{\sum_{i=1}^n (a_i - b_i)^2}, \\ \rho_2(A, B) = \sum_{i=1}^n |a_i - b_i|, \ \\ \rho_3(A, B) = \max_{i=1,\ldots,n} |a_i - b_i|.
@@ -19,8 +19,3 @@ $$
 \rho(M_k, M_0) = \sqrt{\sum_{i=1}^n (x_i^k - x_i^0)^2} < \sqrt{n \cdot \left( \frac{\varepsilon}{\sqrt{n}} \right)^2} = \varepsilon.
 $$
 Следовательно, $M_k \to M_0$.
-
-Преобразовать уравнение $$\displaylines{
-\sin{(x)}^{ 2 } \frac{\partial ^{ 2 }z}{\partial x^{ 2 }} - 2y\sin{(x)} \frac{\partial ^{ 2 }z}{\partial x\partial y}+ y^{ 2 } \frac{\partial ^{ 2 }z}{\partial y^{ 2 }} = 0    
-}$$
-принимая ${\displaystyle \begin{cases}u = y\tan{\left( \frac{x}{2} \right)} \\ v = y\end{cases}}$ за новые переменные.
